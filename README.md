@@ -1,4 +1,4 @@
-# GymFit-Proyecto
+# GymFit-Proyect
 En este proyecto tuvimos que realizar en grupo una aplicación para un gimnasio en Java.
 
 GUIA DE USO APLICACIÓN GYMFIT
