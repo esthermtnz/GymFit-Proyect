@@ -1,39 +1,39 @@
 # GymFit-Proyect
-En este proyecto tuvimos que realizar, en grupo, una aplicación para un gimnasio, en Java.
+In this project we had to create, as a group, an application for a gym, in Java.
 
-GUIA DE USO APLICACIÓN GYMFIT
+GYMFIT APPLICATION USER GUIDE
 
-(Ana Gomez Llaneza, Esther Martinez Blanco y Celia Martin Alvarez)
-
-
-Al ejecutar la aplicación, si no se cargan los datos, sólo está formada por un administrador, el cual tiene que  introducir el usuario “admin” y  la contraseña “admin” para poder acceder a la misma.
-
-Por otro lado, si se desea crear un usuario, en la ventana de login aparece un apartado donde pone Regístrate. Una vez que el cliente se registra, se realiza el pago de la tarifa plana.
-
-Asimismo, si se quiere crear un monitor, eso se debe hacer desde el administrador, por lo tanto habría que iniciar sesión como administrador y desde ahí registrarlo.
-
-Para que resulte más sencillo probar la aplicación, hemos creado un gymmain que contiene monitores, Tipos de Actividad, Clientes. Además también hay salas, tanto simples como compuestas, actividades grupales, sesiones grupales, planes personalizados, sesiones personalizadas, máquinas y material.
-Para poder cargarlo es necesario ejecutar en primer lugar el gymmain y luego el main de la carpeta gui.
-
-Además la aplicación cuenta con una copia de seguridad que se realiza al dar al botón de cerrar sesión desde cualquiera de los usuarios, por lo tanto a la hora de volver a abrir la aplicación se cargará con los datos que se habían creado en la anterior ejecución. Si  se desea borrar los datos y que el gimnasio vuelva a estar vacío, lo único que hay que hacer es dar al botón de borrar backup que se encuentra en la ventana de iniciar sesión, cerrar la aplicacion, por si acaso hacer un refresh de resources por si no se hubiese borrado correctamtente y volver a ejecutar el main.
-
-Por una parte, en cuanto a la funcionalidad del cliente, encontramos los datos del usuario, las actividades grupales. Si te apuntas a la lista de espera podrás ver los demás usuarios que  están apuntados en la lista de espera. Si se desapunta un usuario de esa actividad en la que estás en la lista de espera en el apartado de notificaciones le llegará una a todos los usuarios que están en la lista de espera.
-Asimismo, podrá apuntarse a planes personalizados si cumple los requisitos.
-Para ver los cobros y devoluciones que le han hecho al cliente, puede acceder al apartado de notificaciones.
-Por último, podrá consultar las reservas que ha realizado y si lo desea cancelar alguna.
+(Ana Gomez Llaneza, Esther Martinez Blanco and Celia Martin Alvarez)
 
 
-Por otro lado, en cuanto a la funcionalidad del monitor, puede consultar los datos del monitor así  como sus actividades grupales.
-Por otro lado en el apartado de mis planes personalizados podrá seleccionar una fila y cancelar tanto sesiones como planes y añadir sesiones grupales ya creadas o crear sesiones y planes personalizados.
-Asimismo, el monitor podrá seleccionar una máquina, tanto alquilada como de propiedad y marcarla como averiada.
+When running the application, if the data is not loaded, it only consists of one administrator, who has to enter the user “admin” and the password “admin” to access it.
 
-Finalmente, si se le cancela un plan personalizado al monitor, recibirá una notificación.
+On the other hand, if you want to create a user, a section appears in the login window where it says Register. Once the customer registers, the flat rate payment is made.
+
+Likewise, if you want to create a monitor, this must be done from the administrator, therefore you would have to log in as an administrator and register it from there.
+
+To make it easier to test the application, we have created a gymmain that contains monitors, Activity Types, Clients. In addition, there are also rooms, both simple and composed, group activities, group sessions, personalized plans, personalized sessions, machines and material.
+In order to load it, it is necessary to first run the gymmain and then the main of the gui folder.
+
+In addition, the application has a backup copy that is made when clicking the logout button from any of the users, therefore when it comes to reopening the application it will be loaded with the data that had been created in the previous execution . If you want to delete the data and make the gym empty again, all you have to do is click on the delete backup button found in the login window, close the application, just in case you want to refresh the resources. in case it had not been deleted correctly and run main again.
+
+On the one hand, in terms of client functionality, we find user data, group activities. If you sign up for the waiting list you will be able to see the other users who are signed up for the waiting list. If a user is unsubscribed from that activity for which you are on the waiting list, in the notifications section, one will be sent to all users who are on the waiting list.
+Likewise, you can sign up for personalized plans if you meet the requirements.
+To see the charges and refunds that have been made to the client, you can access the notifications section.
+Finally, you can check the reservations you have made and if you wish to cancel any.
 
 
-Por último, en cuanto a la funcionalidad del administrador, podrá consultar los beneficios del gimnasio, para ello seleccionará un mes y un año y le dará al botón de actualizar tabla, para que le aparezcan todas las sesiones de ese mes. Para calcular el beneficio tendrá que seleccionar todas las sesiones que quiere sumar, eso se realiza dando al ctr a la vez que seleccionas con el ratón, en el caso de que no vayan seguidas las filas, para ahorrarte tiempo si tienes que seleccionar varias seguidas seria con la tecla shift y seleccionando con el ratón y finalmente dar al botón de calcular beneficio.
+On the other hand, regarding the functionality of the monitor, you can consult the data of the monitor as well as your group activities.
+On the other hand, in the my personalized plans section you can select a row and cancel both sessions and plans and add group sessions already created or create personalized sessions and plans.
+Likewise, the monitor will be able to select a machine, whether rented or owned, and mark it as broken.
 
-Por otro lado, para configurar una sala, se recomienda primero seleccionar si es sala general o subsala, porque los datos a rellenar cambian según lo seleccionado.
-Además podrá crear una actividad grupal y sesiones libres, hay que tener en cuenta la hora y fecha a la que se crea si es anterior a la fecha actual dará error, así como que no haya más sesiones en la misma sala a la misma hora. También podrá consultar las reservas de los clientes y los planes de los monitores. 
-Asimismo, en el apartado de consultar actividades grupales del monitor podrá cancelar tanto sesiones como actividades, seleccionando la que desea eliminar y crear sesiones.
-También puede crear un tipo de actividad, configurar el sueldo de los monitores, configurar los precios y configurar las penalizaciones a los clientes (que por defecto tienen un valor predeterminado). 
-Finalmente podrá dar de alta tanto material como máquinas, podrá cambiar el estado de las máquinas, en primer lugar seleccionando si es alquilada o de propiedad y pudiendo cambiar su estado a operativa, en reparación o retirada. Para ver el gasto de la equipación tendrá que realizar lo mismo que para consultar el beneficio del gimnasio, es decir, seleccionar el mes que quiere ver, actualizar la tabla y seleccionar las equipaciones que quiere sumar.
+Finally, if a custom plan is canceled for the monitor, you will receive a notification.
+
+
+Finally, regarding the administrator's functionality, you can consult the benefits of the gym, to do this you will select a month and a year and click the update table button, so that all the sessions for that month appear. To calculate the profit you will have to select all the sessions that you want to add, this is done by clicking on the ctr while selecting with the mouse, in case the rows are not in a row, to save you time if you have to select several in a row it would be with the shift key and selecting with the mouse and finally click on the calculate profit button.
+
+On the other hand, to configure a room, it is recommended to first select whether it is a general room or subroom, because the data to be filled in changes depending on what is selected.
+In addition, you can create a group activity and free sessions. You must take into account the time and date at which it is created. If it is before the current date, it will give an error, as well as ensuring that there are no more sessions in the same room at the same time. You can also consult client reservations and instructor plans.
+Likewise, in the section of consulting group activities of the monitor you can cancel both sessions and activities, selecting the one you want to delete and create sessions.
+You can also create an activity type, configure the salary of monitors, configure prices and configure penalties for clients (which by default have a default value).
+Finally, you will be able to register both material and machines, you will be able to change the status of the machines, first of all by selecting whether it is rented or owned and being able to change its status to operational, under repair or retired. To see the cost of the equipment you will have to do the same as to consult the gym benefit, that is, select the month you want to see, update the table and select the equipment you want to add.
