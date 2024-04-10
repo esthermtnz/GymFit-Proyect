@@ -3,7 +3,7 @@ In this project we had to create, as a group, an application for a gym, in Java.
 
 ## GYMFIT APPLICATION USER GUIDE
 
-#### * Team members: Ana Gomez Llaneza, Esther Martinez Blanco and Celia Martin Alvarez
+#### Team members: Ana Gomez Llaneza, Esther Martinez Blanco and Celia Martin Alvarez
 
 
 When running the application, if the data is not loaded, it only consists of one administrator, who has to enter the user “admin” and the password “admin” to access it.
